@@ -139,7 +139,7 @@ aa= ['71',
 
 aa=[int(i) for i in aa]
 
-data = [line.strip() for line in open("inpPC.pdb", 'r')]
+data = [line.strip() for line in open("inpPC.pdb", 'r') if line.startswith("ATOM")]
 
 num_lip=109
 num_atoms=138
